@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3a86ea"
+    tools:context=".ipCalculator.Ipcalculator">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="67dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText"
+        android:layout_marginStart="125dp"
+        android:maxLength="3"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText"
+        android:layout_marginEnd="131dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText"
+        android:layout_marginEnd="63dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText"
+        android:layout_toStartOf="@+id/editText6"
+        android:text="/"
+        android:textColor="#f4f4f4"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText"
+        android:text="ip"
+        android:textColor="#f4f4f4"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:text="calculate" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button6"
+        android:layout_marginStart="11dp"
+        android:text="Network" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="150dp"
+        android:text="Subnet Mask" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="176dp"
+        android:text="First host" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="203dp"
+        android:text="Last host" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="229dp"
+        android:text="Broadcast"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/ipNetwork"
+        android:layout_width="276dp"
+        android:background="#fff"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/textView10"
+        android:text=""
+        android:hint="Network"/>
+
+    <TextView
+        android:id="@+id/ipSubNet"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignTop="@+id/textView7"
+        android:background="#fff"
+        android:hint="Subnet"
+        android:text=""
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/ipFirstHost"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignTop="@+id/textView8"
+        android:background="#fff"
+        android:hint="First host"
+        android:text=""
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/ipLastHost"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignTop="@+id/textView9"
+        android:background="#fff"
+        android:hint="Last Host"
+        android:text=""
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/ipBroadcast"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignTop="@+id/textView10"
+        android:background="#fff"
+        android:hint="Broadcast"
+        android:text=""
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="213dp"
+        android:background="#fff"
+        android:text="Binary"
+        android:textStyle="bold"
+        android:textColor="#3a86ea"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="-213dp"
+        android:text="Network"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="149dp"
+        android:text="Subnet Mask"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="106dp"
+        android:text="First host"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="66dp"
+        android:text="Last host"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="25dp"
+        android:text="Broadcast"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView13"
+        android:background="#fff"
+        android:hint="Network Binary"
+        android:text=""
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="-149dp"
+        android:background="#fff"
+        android:hint="Subnet Binary"
+        android:text=""
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="-106dp"
+        android:background="#fff"
+        android:hint="First host Binary"
+        android:text=""
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="-66dp"
+        android:background="#fff"
+        android:hint="Last host Binary"
+        android:text=""
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="-25dp"
+        android:background="#fff"
+        android:hint="BroadCast Binaty"
+        android:text=""
+        android:textColor="#000" />
+</RelativeLayout>

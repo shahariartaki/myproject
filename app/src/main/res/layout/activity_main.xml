@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3a86ea"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="124dp"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/uulogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="86dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginEnd="19dp"
+        android:text="UTTARA UNIVERSITY"
+        android:textColor="#f4f4f4"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="computer science and engineering"
+        android:textColor="#f4f4f4"
+        android:textSize="16sp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter your ID"
+        android:textColor="#f4f4f4"
+        android:textColorHint="#f4f4f4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="185dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText2"
+        android:onClick="Clickforstudent"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="124dp"
+        android:onClick="teacherf"
+        android:text="Fecalty member" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignTop="@+id/button2"
+        android:text="Notice Board" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:onClick="binary"
+        android:layout_marginBottom="68dp"
+        android:text="Binary Calculator" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button4"
+        android:layout_marginEnd="37dp"
+        android:text="ip Calculator"
+        android:onClick="OpenIPCalulator"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView">
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="356dp"
+        android:layout_height="123dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"
+        android:text="এই অ্যাপ এর সাহায্যে উত্তরা ইউনিভার্সিটির CSE ডিপার্টমেন্টের সকল কার্জ কর্ম সম্পর্কে জানা যাবে ।  এবং প্রত্যেক ছাত্র তাদের ক্লাস এবং ক্লাসের নুডস পাবে ।  ছাত্ররা বাইনারি ক্যালকুলেটর এবং আইপি ক্যালকুলেটর ব্যাবহার করার সুযোগ পাবে । উত্তরা ইউনিভার্সিটির CSE ডিপার্টমে সকল  ছাত্রদের জন্য এই অ্যাপটি  ফ্রি  "
+        android:textColor="#f4f4f4" />
+
+</RelativeLayout>
